@@ -5,7 +5,7 @@ from collections import Counter
 # build the parser
 parser = argparse.ArgumentParser(description='Reads a log file and returns various error stats')
 parser.add_argument('--file', '-f', required=True, help='the log file to analyze')
-parser.add_argument('--level', '-l', help='ERROR|WARN|INFO. Default is ERROR')
+parser.add_argument('--level', '-l', nargs='?', default='ERROR', const='ERROR', choices=['ERROR', 'WARN', 'INFO'], help='Default is ERROR if none is provided')
 parser.add_argument('--version', '-v', action='version', version='%(prog)s v0.2')
 parser.add_argument('--top5', '-t', action='store_true', help='Show the top 5 most frequent messages')
 
@@ -47,9 +47,6 @@ def top_five(filename):
     return top_five
 
 def main():
-    # If no level is provided the default is ERROR
-    log_level = 'error'
-
     if args.level:
         log_level = args.level
            
