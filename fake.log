@@ -12,7 +12,6 @@
 2026-07-28 14:33:02 [ERROR] SSL certificate verification failed for api.telemetry.internal.
 2026-07-28 14:33:05 [INFO] Bypassing non-critical telemetry sync until cert renewal.
 2026-07-28 18:05:19 [ERROR] Unauthorized access attempt blocked from IP 45.33.12.90.
-2026-07-28 22:47:51 [INFO] Background worker threads spawned: 4 active.
 2026-07-29 00:12:38 [WARNING] High memory usage detected in worker thread 2 (85%).
 2026-07-29 01:44:20 [ERROR] Corrupted cache index found at sector 0x4F2A.
 2026-07-29 01:44:22 [INFO] Purging corrupted cache sector and rebuilding.
